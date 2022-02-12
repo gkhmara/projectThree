@@ -87,15 +87,21 @@ testArray;
 
 //1-3 CURRENT-1.1
 //const array = [13, 12, 23];
-const array = [13, 12, 23, 55]
+const input = [13, 12, 23, 55, 9];
 
-let testVariable;
+const array = [];
+
+let tempHold;
+
+let splitVariable = [];
+
+let testVariable = [];
 
 let testArray = [];
 
 function splitNumbers() {
-  testVariable = array.join("|");
-  testArray = testVariable.split("")
+  splitVariable = input.join("|");
+  testArray = splitVariable.split("")
 }
 
 function replaceNumbers() {
@@ -103,21 +109,66 @@ function replaceNumbers() {
             if (testArray[i] === "3"){
               testArray[i] = ("Won't you be my neighbor");
             } else if (testArray[i] != "1" && testArray[i] != "2" && testArray[i] != "|"){
-              testArray[i] = parseInt(testArray[i]);
+             testArray[i] = parseInt(testArray[i]);
             }
           }
       }
 
+function pushToNewArray() {
+  testArray.forEach(function(element, index) {
+    array.push(element);
+  })
+}
+
+// function splitNumbersOut() {
+//   for (let i = 0; i < array.length; i++) {
+   
+//     if (typeof(array[i]) === 'number') {
+//       testVariable.push(array[i]);
+//       tempHold = testVariable.join('');
+//       tempHold = parseInt(tempHold);
+//     }
+//   }
+// }
+
+// function replace() {
+//   for (let i = 0; i < array.length; i++) {
+   
+//     if (typeof(array[i]) === 'number') {
+//       array[i] = tempHold;
+//     }
+//   }
+// }
+
+// function deleteDuplicate() {
+//   for (let i = 0; i < array.length; i++) {
+//     // console.log("index = " + index);
+//     // console.log("array " + i + " = " + array[i]);
+//     // console.log("array " + (i + 1) + " = " + array[i + 1]);
+//     if (array[i] === array [i + 1]) {
+//       array.splice(i, 1);
+//     }
+//   }
+// }
+
+
+
 splitNumbers();
 replaceNumbers();
-testArray;
+pushToNewArray();
+//splitNumbersOut();
+//replace();
+//deleteDuplicate();
+console.log(testArray);
+console.log(input);
+console.log(array);
 
 
 
 
 
 
-//1-4 CURRENT-2.0
+//1-4 CURRENT-1.0
 //const array = [13, 12, 23];
 const array = ['1', "Won't you be my neighbor", '|', '1', '2', '|', '2', "Won't you be my neighbor", '|', 5, 5]
 
