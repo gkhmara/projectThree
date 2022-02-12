@@ -57,7 +57,7 @@ testArray;
 
 
 
-//1-3
+//1-3 CURRENT
 //const array = [13, 12, 23];
 const array = [13, 12, 23, 55]
 
@@ -76,7 +76,6 @@ function replaceNumbers() {
               testArray[i] = ("Won't you be my neighbor");
             } else if (testArray[i] != "1" && testArray[i] != "2" && testArray[i] != "|"){
               testArray[i] = parseInt(testArray[i]);
-              testArray[i] = testArray[i].concate();
             }
           }
       }
@@ -84,3 +83,23 @@ function replaceNumbers() {
 splitNumbers();
 replaceNumbers();
 testArray;
+
+//1-4
+//const array = [13, 12, 23];
+const array = [5, 5, "13", 9]
+
+let testVariable;
+
+let testArray = [];
+
+function splitNumbers() {
+  for (let i = 0; i < array.length; i++) {
+   
+    if (typeof(array[i]) != 'number') {
+      alert(array[i]);
+      array[i] = array.join("");
+    }
+  }
+}
+
+splitNumbers();
