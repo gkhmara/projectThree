@@ -74,8 +74,9 @@ function replaceNumbers() {
           for (let i = 0; i < testArray.length; i++){
             if (testArray[i] === "3"){
               testArray[i] = ("Won't you be my neighbor");
-            } else {
-              // alert(testArray[i]);
+            } else if (testArray[i] != "1" && testArray[i] != "2" && testArray[i] != "|"){
+              testArray[i] = parseInt(testArray[i]);
+              testArray[i] = testArray[i].concate();
             }
           }
       }
