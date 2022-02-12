@@ -11,3 +11,5 @@ numbers.forEach(function(element, index) {
 });
 
 console.log(numbers);
+
+
