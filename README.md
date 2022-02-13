@@ -13,9 +13,6 @@
 
 This site creates an array of numbers using the user's input as a stopping point. The numbers 1, 2, and 3 are then replaced with specific strings that change depending on if the element in the array has a 1, 2, or 3.
 
-## Link to site on GitHub Pages
-https://gkhmara.github.io/portfolio-website/
-
 ## Setup/Installation Requirements
 
 * Clone the repo from Gitup
