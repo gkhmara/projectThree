@@ -22,40 +22,43 @@ This site creates an array of numbers using the user's input as a stopping point
 
 #### Describe: createArray()
 
-Test: "It will return an array of numbers using the user's input as a stopping point.}
+- Test: "It will return an array of numbers using the user's input as a stopping point.}
 
-Code:
+- Code:
 
 num = "10";
 
 createArray();
 
-Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
+- Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+---
+---
 #### Describe: replaceElements()
 
-Test: "It will replace the number 3 with the string "Won't you be my neighbor?" if 3 is present in the array."
-Code:
+- Test: "It will replace the number 3 with the string "Won't you be my neighbor?" if 3 is present in the array."
+- Code:
 if (element.includes("3")) {
       userArray[index] = "Won't you be my neighbor?";
 }
 replaceElements();
-Expected Output: [0, 1, 2, "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10]
-
-Test: "It will replace the number 2 with the string "Boop!" if 2 is present in the array."
-Code:
+- Expected Output: [0, 1, 2, "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10]
+---
+- Test: "It will replace the number 2 with the string "Boop!" if 2 is present in the array."
+- Code:
 else if (element.includes("2")) {
       userArray[index] = "Boop!";
 }
-Expected Output: [0, 1, "Boop!", 3, 4, 5, 6, 7, 8, 9, 10]
-
-Test: "It will replace the number 1 with the string "Beep!" if 1 is present in the array."
-Code:
+- Expected Output: [0, 1, "Boop!", 3, 4, 5, 6, 7, 8, 9, 10]
+---
+- Test: "It will replace the number 1 with the string "Beep!" if 1 is present in the array."
+- Code:
 else if (element.includes("1")) {
       userArray[index] = "Beep!";
 }
-Expected Output:
+- Expected Output:
 [0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, "Beep!"]
+---
+---
 
 ## Known Bugs
 
