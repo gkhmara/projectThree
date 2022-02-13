@@ -9,10 +9,41 @@
 </head>
 <body>
   <div class="heading">
-    <h1>Mr. Roboger's Neighborhood | Greg Khmara</h1>
+    <h1>Mr. Roboger's Neighborhood</h1>
   </div>
   <div class="container">
-    <h2>Welcome to Mr. Roboger's neighborhood! Please enter a number to recieve a wonderful message.</h2>
+    <h2>Welcome to Mr. Roboger's neighborhood!</h2>
+    
+   
+    <form id="userInput">
+
+      <div class="form-group">
+        <input type="number" class="form-control" name="num" id="num">
+        <button type="submit" class="btn" onclick="myFunction()">submit</button>
+      </div>
+      
+      
+      <!-- <div class="form-group">
+        <label for="number">Please enter a number to recieve a wonderful message.</label>
+        <input id="number" class="form-control" type="text">
+        <button type="submit" class="btn">Enter Number</button>
+      </div> -->
+    </form>
+      
+    
+    <div id="results">
+      <ul>
+        
+        <li>
+          <div id="numberOutput">
+            <p><span class="number"></span></p>
+          </div>
+          <div id="error">
+            <p>Please Enter a number and try again.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
