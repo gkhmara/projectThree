@@ -68,7 +68,7 @@ else if (element.includes("1")) {
 
 MIT License
 
-Copyright (c) 01-13-22 Greg Khmara  
+Copyright (c) 02-13-22 Greg Khmara  
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
