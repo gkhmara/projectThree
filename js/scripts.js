@@ -1,5 +1,3 @@
-
-let one = "Beep";
 let userArray = [];
 
 function myFunction() {
@@ -7,31 +5,29 @@ function myFunction() {
     if (num) {
 
       for(let i = 0; i <= num; i++){
-        userArray.push(i);
+        userArray.push(i.toString());
       }
 
-    alert(userArray);
-
     }
-
-    if (userArray[3] === 3) {
-      userArray[3] === one;
-    }
-
-
 
 }
 
 
-// userArray.forEach(function(element, index) {
-//   if (element.includes("3")) {
-//     userArray[index] = "Won't you be my neighbor?";
-//   } else if (element.includes("2")) {
-//     userArray[index] = "Boop!";
-//   } else if (element.includes("1")) {
-//     userArray[index] = "Beep!";
-//   }
-// });
+function myFunction2() {
+
+userArray.forEach(function(element, index) {
+  if (element.includes("3")) {
+    userArray[index] = "Won't you be my neighbor?";
+  } else if (element.includes("2")) {
+    userArray[index] = "Boop!";
+  } else if (element.includes("1")) {
+    userArray[index] = "Beep!";
+  }
+});
+
+}
+
+
 
 
 
