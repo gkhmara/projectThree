@@ -22,13 +22,9 @@ This site creates an array of numbers using the user's input as a stopping point
 
 #### Describe: createArray()
 
-- Test: "It will return an array of numbers using the user's input as a stopping point.}
+- Test: "It will return an array of numbers using the user's input as a stopping point.
 
-- Code:
-
-num = "10";
-
-createArray();
+- Code: num = "10"; createArray();
 
 - Expected Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ---
