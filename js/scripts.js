@@ -1,36 +1,36 @@
-let userArray = [];
+function createArray(poop) {
+  let userArray = [];
 
-function createArray() {
-  let num = document.getElementById("num").value;
-    if (num) {
-      for(let i = 0; i <= num; i++){
+  if(poop) {
+    for (let i = 0; i <= poop; i++) {
+      if (i.toString().includes("3")) {
+        userArray.push("Won't you be my neighbor?");
+      } else if (i.toString().includes("2")) {
+        userArray.push("Beep");
+      } else if (i.toString().includes("1")) {
+        userArray.push("Boop");
+      } else {
         userArray.push(i.toString());
       }
     }
-}
-
-function replaceElements() {
-  userArray.forEach(function(element, index) {
-    if (element.includes("3")) {
-      userArray[index] = "Won't you be my neighbor?";
-    } else if (element.includes("2")) {
-      userArray[index] = "Boop!";
-    } else if (element.includes("1")) {
-      userArray[index] = "Beep!";
-    }
-  });
+  }
+return userArray;
 }
 
 $(document).ready(function(){
   $("#userInput").submit(function(event){
-    
-    if (Boolean(userArray) === true){
-      $(".number").text(userArray);
+  event.preventDefault();
+
+  const num = document.getElementById("num").value;
+  const output = createArray(num);
+
+    if (Boolean(output) === true){
+      $(".number").text(output);
     }
 
     $("#results").show();
     
-    event.preventDefault();
+    
   });
 });
 
