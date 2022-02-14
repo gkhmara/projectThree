@@ -35,19 +35,19 @@ This site creates an array of numbers using the user's input as a stopping point
 - Code:
 if (i.toString().includes("3")) {
         userArray.push("Won't you be my neighbor?");
-- Expected Output: - Expected Output: [0, 1, 2, "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10]
+- Expected Output: [0, 1, 2, "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10]
 ---
 - Test: "It will convert i to string and check to see if i is equal to string "2". If true it will push string "Beep!" to userArray.
 - Code:
 if (i.toString().includes("2")) {
         userArray.push("Beep");
-- Expected Output: - Expected Output: [0, 1, "Beep!", 3, 4, 5, 6, 7, 8, 9, 10]
+- Expected Output: [0, 1, "Beep!", 3, 4, 5, 6, 7, 8, 9, 10]
 ---
 - Test: "It will convert i to string and check to see if i is equal to string "1". If true it will push string "Boop!" to userArray.
 - Code:
 if (i.toString().includes("1")) {
         userArray.push("Boop");
-- Expected Output: - Expected Output: [0, Boop, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+- Expected Output: [0, Boop, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ---
 ---
 
