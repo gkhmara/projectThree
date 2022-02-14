@@ -1,8 +1,8 @@
-function createArray(poop) {
+function createArray(num) {
   let userArray = [];
 
-  if(poop) {
-    for (let i = 0; i <= poop; i++) {
+  if(num) {
+    for (let i = 0; i <= num; i++) {
       if (i.toString().includes("3")) {
         userArray.push("Won't you be my neighbor?");
       } else if (i.toString().includes("2")) {
